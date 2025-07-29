@@ -1,0 +1,19 @@
+.header {
+  padding: 1rem;
+  background-color: #ff0066;
+  color: white;
+
+  nav {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
