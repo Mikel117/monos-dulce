@@ -1,4 +1,3 @@
-import Header from '@organisms/Header'
 import Title from '@atoms/Title'
 import { products } from '../../../data/products'
 import styles from './CatalogTemplate.module.scss'
@@ -7,7 +6,6 @@ import ProductCard from '@molecules/ProductCard'
 export default function CatalogTemplate() {
   return (
     <>
-      <Header />
       <main>
         <Title>Catálogo de productos</Title>
         <div className={styles.grid}>

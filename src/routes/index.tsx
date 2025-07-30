@@ -1,12 +1,15 @@
-import { Routes, Route } from 'react-router-dom'
-import HomePage from '../components/pages/HomePage'
-import CatalogPage from '../components/pages/CatalogPage'
+import { createBrowserRouter } from 'react-router-dom'
+import Layout from '@templates/Layout'
+import HomePage from '@pages/HomePage'
+import CatalogPage from '@pages/CatalogPage'
 
-export default function Router() {
-  return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/catalog" element={<CatalogPage />} />
-    </Routes>
-  )
-}
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />, // ⬅️ Aquí va el navbar persistente
+    children: [
+      { path: '', element: <HomePage /> },
+      { path: 'products', element: <CatalogPage /> },
+    ]
+  }
+])
