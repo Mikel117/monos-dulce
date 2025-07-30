@@ -1,10 +1,4 @@
-export type Product = {
-  id: number
-  name: string
-  price: number
-  category: 'venta' | 'renta'
-  image: string
-}
+import type { Product } from "../types/product";
 
 export const products: Product[] = [
   {

@@ -1,6 +1,6 @@
-import Header from '../../organisms/Header/Header'
-import Title from '../../atoms/Title/Title'
-import ProductCard from '../../molecules/ProductCard/ProductCard'
+import Header from '../../organisms/Header'
+import Title from '../../atoms/Title'
+import ProductCard from '../../molecules/ProductCard'
 import { products } from '../../../data/products'
 import styles from './CatalogTemplate.module.scss'
 

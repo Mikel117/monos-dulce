@@ -1,4 +1,5 @@
-import type { Product } from "../../../data/products";
+import { Product } from '@types/product'
+
 import styles from './ProductCard.module.scss'
 
 export default function ProductCard({ product }: { product: Product }) {

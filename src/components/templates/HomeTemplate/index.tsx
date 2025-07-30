@@ -1,5 +1,5 @@
-import Header from '../../organisms/Header/Header'
-import Title from '../../atoms/Title/Title'
+import Header from '../../organisms/Header'
+import Title from '../../atoms/Title'
 import { Link } from 'react-router-dom'
 
 export default function HomeTemplate() {
