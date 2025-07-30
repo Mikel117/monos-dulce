@@ -7,11 +7,10 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@types': path.resolve(__dirname, 'src/types'),
-      '@components/atoms': path.resolve(__dirname, 'src/components/atoms'),
-      '@components/molecules': path.resolve(__dirname, 'src/components/molecules'),
-      '@components/organisms': path.resolve(__dirname, 'src/components/organisms'),
+      '@models': path.resolve(__dirname, 'src/types'),
+      '@atoms': path.resolve(__dirname, 'src/components/atoms'),
+      '@molecules': path.resolve(__dirname, 'src/components/molecules'),
+      '@organisms': path.resolve(__dirname, 'src/components/organisms'),
     }
   }
 })
