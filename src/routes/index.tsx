@@ -6,7 +6,7 @@ import CatalogPage from '@pages/CatalogPage'
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />, // ⬅️ Aquí va el navbar persistente
+    element: <Layout />,
     children: [
       { path: '', element: <HomePage /> },
       { path: 'products', element: <CatalogPage /> },
